@@ -13,38 +13,82 @@
             padding: 20px;
             line-height: 1.6;
             color: #333;
+            background: linear-gradient(135deg, #FFF0F5 0%, #FFE4E8 100%);
+            min-height: 100vh;
         }
 
-        h1,
+        .back-link {
+            display: inline-block;
+            color: #FF6B9D;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .back-link:hover {
+            color: #C44569;
+        }
+
+        h1 {
+            color: #C44569;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
         h2 {
-            color: #2c3e50;
+            color: #FF6B9D;
+            margin-top: 40px;
+            margin-bottom: 20px;
         }
 
         .contact-box {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
             margin: 20px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         }
 
         .faq-item {
-            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
 
         .faq-question {
             font-weight: bold;
-            color: #2c3e50;
+            color: #FF6B9D;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #FF6B9D;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            color: #666;
+            font-style: italic;
         }
     </style>
 </head>
 
 <body>
+    <a href="index.html" class="back-link">← Back to Home</a>
     <h1>Baby Bump - Support</h1>
+    <p class="last-updated">Last updated: November 2, 2025</p>
 
     <div class="contact-box">
         <h2>Get Help</h2>
         <p>Need assistance with Baby Bump? We're here to help!</p>
-        <p><strong>Email:</strong> mikeabadie@gmail.com</p>
+        <p><strong>Email:</strong> mikeabadie12@gmail.com</p>
         <p><strong>Response Time:</strong> Usually within 24 hours</p>
     </div>
 
@@ -92,7 +136,7 @@
     <div class="contact-box">
         <h2>Still Need Help?</h2>
         <p>If you can't find the answer you're looking for, please don't hesitate to reach out:</p>
-        <p><strong>Email:</strong> mikeabadie@gmail.com</p>
+        <p><strong>Email:</strong> mikeabadie12@gmail.com</p>
         <p>Please include:</p>
         <ul>
             <li>Your device model (iPhone 12, etc.)</li>
@@ -100,6 +144,15 @@
             <li>App version</li>
             <li>Description of the issue</li>
         </ul>
+    </div>
+
+    <h2>Other Resources</h2>
+    <div class="faq-item">
+        <p style="text-align: center;">
+            <a href="privacy-policy.html">Privacy Policy</a> • 
+            <a href="terms-of-service.html">Terms of Service</a> • 
+            <a href="index.html">Home</a>
+        </p>
     </div>
 </body>
 

@@ -13,23 +13,69 @@
             padding: 20px;
             line-height: 1.6;
             color: #333;
+            background: linear-gradient(135deg, #FFF0F5 0%, #FFE4E8 100%);
+            min-height: 100vh;
         }
 
-        h1,
+        .back-link {
+            display: inline-block;
+            color: #FF6B9D;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .back-link:hover {
+            color: #C44569;
+        }
+
+        h1 {
+            color: #C44569;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
         h2 {
-            color: #2c3e50;
+            color: #FF6B9D;
+            margin-top: 30px;
         }
 
         .last-updated {
             color: #666;
             font-style: italic;
         }
+
+        .content-wrapper {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        a {
+            color: #FF6B9D;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #EEE;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Privacy Policy for Baby Bump</h1>
-    <p class="last-updated">Last updated: January 2025</p>
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <div class="content-wrapper">
+        <h1>Privacy Policy for Baby Bump</h1>
+        <p class="last-updated">Last updated: October 30, 2025</p>
 
     <h2>Information We Collect</h2>
     <p>Baby Bump is designed with your privacy in mind. We collect and process the following information:</p>
@@ -51,12 +97,15 @@
         or any cloud service without your explicit consent.</p>
 
     <h2>Third-Party Services</h2>
-    <p>We may use the following third-party services:</p>
+    <p>We use the following third-party services:</p>
     <ul>
-        <li><strong>Analytics:</strong> To understand app usage and improve performance</li>
-        <li><strong>Crash Reporting:</strong> To identify and fix app crashes</li>
-        <li><strong>Payment Processing:</strong> For premium subscriptions (handled securely by Apple/Google)</li>
+        <li><strong>Sentry:</strong> For crash reporting and error monitoring to improve app stability</li>
+        <li><strong>RevenueCat:</strong> For managing in-app subscriptions and purchases</li>
+        <li><strong>Apple App Store:</strong> For payment processing and subscription management (handled securely by
+            Apple)</li>
     </ul>
+    <p>These services may collect limited technical information (crash reports, device type, app version) to help us
+        improve the app. No photos or personal album data is shared with these services.</p>
 
     <h2>Permissions</h2>
     <p>The app requests the following permissions:</p>
@@ -81,20 +130,33 @@
     <h2>Your Rights</h2>
     <p>You have the right to:</p>
     <ul>
-        <li>Access your personal data</li>
-        <li>Delete your personal data</li>
-        <li>Export your data</li>
-        <li>Opt out of analytics</li>
+        <li><strong>Access your data:</strong> All your photos and albums are stored locally on your device and
+            accessible at any time</li>
+        <li><strong>Delete your data:</strong> You can delete individual albums, photos, or all data through the app's
+            Settings > Data & Privacy section</li>
+        <li><strong>Export your data:</strong> Your photos remain in your device's photo library and can be backed up
+            through iCloud or iTunes</li>
+        <li><strong>Data portability:</strong> Since all data is stored locally, you maintain full control and can
+            transfer your device backup</li>
     </ul>
 
     <h2>Contact Us</h2>
     <p>If you have questions about this privacy policy, contact us at:</p>
-    <p>Email: support@babybump-app.com<br>
+    <p>Email: mikeabadie12@gmail.com<br>
         Website: https://mikeabadie.github.io/baby-bump-website</p>
 
     <h2>Changes to This Policy</h2>
     <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy
         policy on this page.</p>
+
+    <div class="footer-links">
+        <p>
+            <a href="index.html">Home</a> • 
+            <a href="terms-of-service.html">Terms of Service</a> • 
+            <a href="support.html">Support</a>
+        </p>
+    </div>
+    </div>
 </body>
 
 </html>
