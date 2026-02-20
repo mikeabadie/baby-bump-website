@@ -1,159 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baby Bump - Support</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #FFF0F5 0%, #FFE4E8 100%);
-            min-height: 100vh;
-        }
-
-        .back-link {
-            display: inline-block;
-            color: #FF6B9D;
-            text-decoration: none;
-            margin-bottom: 20px;
-            font-size: 1.1em;
-        }
-
-        .back-link:hover {
-            color: #C44569;
-        }
-
-        h1 {
-            color: #C44569;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            color: #FF6B9D;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-
-        .contact-box {
-            background: white;
-            padding: 30px;
-            border-radius: 16px;
-            margin: 20px 0;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .faq-item {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        .faq-question {
-            font-weight: bold;
-            color: #FF6B9D;
-            font-size: 1.1em;
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: #FF6B9D;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .last-updated {
-            color: #666;
-            font-style: italic;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baby Bump — Support</title>
+  <meta name="description" content="Get help with Baby Bump. FAQs, contact information, and troubleshooting.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {
+        blush: { 50: '#FFF8F6', 100: '#FFF0ED', 200: '#FFE4E0' },
+        coral: { 400: '#F48C8C', 500: '#E87272', 700: '#C44569' }
+      }}}
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>* { font-family: 'DM Sans', system-ui, sans-serif; }</style>
 </head>
+<body class="bg-blush-50 min-h-screen">
+  <!-- Nav -->
+  <nav class="bg-white/80 backdrop-blur-md border-b border-blush-100 sticky top-0 z-50">
+    <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 text-gray-900 font-semibold hover:text-coral-500 transition-colors">
+        <img src="logo.png" alt="Baby Bump" class="h-8 w-auto">
+        <span>Baby Bump</span>
+      </a>
+      <a href="index.html" class="text-sm text-gray-400 hover:text-coral-500 transition-colors">← Back to Home</a>
+    </div>
+  </nav>
 
-<body>
-    <a href="index.html" class="back-link">← Back to Home</a>
-    <h1>Baby Bump - Support</h1>
-    <p class="last-updated">Last updated: November 2, 2025</p>
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Support</h1>
+    <p class="text-gray-400 text-sm mb-10">Last updated: November 2, 2025</p>
 
-    <div class="contact-box">
-        <h2>Get Help</h2>
-        <p>Need assistance with Baby Bump? We're here to help!</p>
-        <p><strong>Email:</strong> mikeabadie12@gmail.com</p>
-        <p><strong>Response Time:</strong> Usually within 24 hours</p>
+    <!-- Contact -->
+    <div class="bg-white rounded-2xl p-8 shadow-sm border border-blush-100 mb-10">
+      <h2 class="text-xl font-bold text-gray-900 mb-4">Get Help</h2>
+      <p class="text-gray-500 mb-4">Need assistance with Baby Bump? We're here to help!</p>
+      <p class="text-gray-600"><strong>Email:</strong> <a href="mailto:support@getbabybump.com" class="text-coral-500 hover:underline">support@getbabybump.com</a></p>
+      <p class="text-gray-500 text-sm mt-2">Usually responds within 24 hours</p>
     </div>
 
-    <h2>Frequently Asked Questions</h2>
-
-    <div class="faq-item">
-        <div class="faq-question">How do I create a new album?</div>
-        <p>Tap the "+" button on the main screen, enter your album name and details, then start adding photos!</p>
+    <!-- FAQ -->
+    <h2 class="text-xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+    <div class="space-y-4 mb-10">
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-blush-100">
+        <h3 class="font-semibold text-gray-900 mb-2">How do I create a new album?</h3>
+        <p class="text-gray-500 text-sm">Tap the "+" button on the main screen, enter your album name and details, then start adding photos!</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-blush-100">
+        <h3 class="font-semibold text-gray-900 mb-2">Are my photos stored in the cloud?</h3>
+        <p class="text-gray-500 text-sm">Photos are stored locally on your device by default. Premium subscribers get iCloud backup for extra safety.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-blush-100">
+        <h3 class="font-semibold text-gray-900 mb-2">How do I backup my albums?</h3>
+        <p class="text-gray-500 text-sm">Premium subscribers get automatic iCloud backup. Free users can back up through their device's regular iCloud or iTunes backup.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-blush-100">
+        <h3 class="font-semibold text-gray-900 mb-2">Can I share my albums with others?</h3>
+        <p class="text-gray-500 text-sm">You can share individual photos, create collages, and generate slideshows to share with loved ones.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-blush-100">
+        <h3 class="font-semibold text-gray-900 mb-2">The app crashed or won't open. What should I do?</h3>
+        <p class="text-gray-500 text-sm">Try closing and reopening the app. If the problem persists, restart your device. If issues continue, please email us with your device model and iOS version.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-blush-100">
+        <h3 class="font-semibold text-gray-900 mb-2">How do I delete an album?</h3>
+        <p class="text-gray-500 text-sm">Go to Album Settings and tap the delete option. Note: This action cannot be undone.</p>
+      </div>
     </div>
 
-    <div class="faq-item">
-        <div class="faq-question">Are my photos stored in the cloud?</div>
-        <p>No! All your photos are stored locally on your device for maximum privacy and security.</p>
+    <h2 class="text-xl font-bold text-gray-900 mb-4">Feature Requests</h2>
+    <p class="text-gray-500 mb-10">Have an idea for a new feature? We'd love to hear from you! Email us your suggestions.</p>
+
+    <h2 class="text-xl font-bold text-gray-900 mb-4">Privacy & Data</h2>
+    <p class="text-gray-500 mb-10">Questions about data privacy? Check our <a href="privacy-policy.html" class="text-coral-500 hover:underline">Privacy Policy</a> or contact us directly.</p>
+
+    <!-- Still need help -->
+    <div class="bg-white rounded-2xl p-8 shadow-sm border border-blush-100 mb-10">
+      <h2 class="text-xl font-bold text-gray-900 mb-4">Still Need Help?</h2>
+      <p class="text-gray-500 mb-4">If you can't find the answer you're looking for, please don't hesitate to reach out:</p>
+      <p class="text-gray-600 mb-4"><strong>Email:</strong> <a href="mailto:support@getbabybump.com" class="text-coral-500 hover:underline">support@getbabybump.com</a></p>
+      <p class="text-gray-500 text-sm mb-2">Please include:</p>
+      <ul class="text-gray-500 text-sm space-y-1 list-disc list-inside">
+        <li>Your device model (iPhone 12, etc.)</li>
+        <li>iOS version</li>
+        <li>App version</li>
+        <li>Description of the issue</li>
+      </ul>
     </div>
+  </main>
 
-    <div class="faq-item">
-        <div class="faq-question">How do I backup my albums?</div>
-        <p>Currently, photos are stored locally. We recommend backing up your device regularly through iCloud or iTunes.
-        </p>
+  <footer class="border-t border-blush-100 bg-white">
+    <div class="max-w-3xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p class="text-sm text-gray-400">&copy; 2025–2026 Baby Bump</p>
+      <div class="flex gap-6 text-sm">
+        <a href="index.html" class="text-gray-400 hover:text-coral-500 transition-colors">Home</a>
+        <a href="privacy-policy.html" class="text-gray-400 hover:text-coral-500 transition-colors">Privacy</a>
+        <a href="terms-of-service.html" class="text-gray-400 hover:text-coral-500 transition-colors">Terms</a>
+      </div>
     </div>
-
-    <div class="faq-item">
-        <div class="faq-question">Can I share my albums with others?</div>
-        <p>You can share individual photos from within the app using the share button.</p>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question">The app crashed or won't open. What should I do?</div>
-        <p>Try closing and reopening the app. If the problem persists, restart your device. If issues continue, please
-            email us with your device model and iOS version.</p>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question">How do I delete an album?</div>
-        <p>Go to Album Settings and tap the delete option. Note: This action cannot be undone.</p>
-    </div>
-
-    <h2>Feature Requests</h2>
-    <p>Have an idea for a new feature? We'd love to hear from you! Email us your suggestions.</p>
-
-    <h2>Privacy & Data</h2>
-    <p>Questions about data privacy? Check our <a href="privacy-policy.html">Privacy Policy</a> or contact us directly.
-    </p>
-
-    <div class="contact-box">
-        <h2>Still Need Help?</h2>
-        <p>If you can't find the answer you're looking for, please don't hesitate to reach out:</p>
-        <p><strong>Email:</strong> mikeabadie12@gmail.com</p>
-        <p>Please include:</p>
-        <ul>
-            <li>Your device model (iPhone 12, etc.)</li>
-            <li>iOS version</li>
-            <li>App version</li>
-            <li>Description of the issue</li>
-        </ul>
-    </div>
-
-    <h2>Other Resources</h2>
-    <div class="faq-item">
-        <p style="text-align: center;">
-            <a href="privacy-policy.html">Privacy Policy</a> • 
-            <a href="terms-of-service.html">Terms of Service</a> • 
-            <a href="index.html">Home</a>
-        </p>
-    </div>
+  </footer>
 </body>
-
 </html>
